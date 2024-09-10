@@ -305,7 +305,7 @@ function Get-Theme {
             return
         }
     } else {
-        oh-my-posh init pwsh --config "env:POSH_THEMES_PATH/rubrick_theme.omp.json" | Invoke-Expression
+        oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/rubrick_theme.omp.json" | Invoke-Expression
     }
 }
 
