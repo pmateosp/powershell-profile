@@ -229,6 +229,7 @@ function k9 { Stop-Process -Name $args[0] }
 # Enhanced Listing
 function la { Get-ChildItem -Path . -Force | Format-Table -AutoSize }
 function ll { Get-ChildItem -Path . -Force -Hidden | Format-Table -AutoSize }
+function lt { Get-ChildItem -Path . -Force -Directory | Format-Table -AutoSize }
 
 # Git Shortcuts
 function gs { git status }
